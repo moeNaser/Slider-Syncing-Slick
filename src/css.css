@@ -1,0 +1,101 @@
+*{
+  -webkit-box-sizing:border-box;
+          box-sizing:border-box
+}
+
+.js .slider-single > div:nth-child(1n+2) { display: none }
+
+.js .slider-single.slick-initialized > div:nth-child(1n+2) { display: block }
+.column{
+  width: 75%;
+  margin:0 auto;
+}
+.hp-carousel-container{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.hp-carousel-container .slider-single{
+  width: 70%;
+  margin:0;
+}
+.hp-carousel-container .slider-single .slick-track .slick-slide{
+  height: 377px;
+  max-height: 377px;
+  overflow: hidden;
+}
+.hp-carousel-container .slider-single .slick-track .slick-slide img.slider-img{
+  width: 100%;
+    height: auto;
+}
+.hp-carousel-container .slider-nav{
+  width:30%;
+  margin:0;
+  overflow: hidden;
+
+}
+.hp-carousel-container .slider-nav .slick-track{
+  /* height: 400px !important; */
+}
+
+.hp-carousel-container .slider-nav .slick-list{
+  border:1px solid #000;
+}
+.hp-carousel-container .slider-nav .slick-track .slick-slide{
+  height: 125px;
+  max-height: 125px;
+  border:0;
+  cursor: pointer;
+}
+.hp-carousel-container .slider-nav .slick-track .slick-slide > div{
+  height: 100%;
+}
+
+
+.hp-carousel-container .slider-nav .slick-track .slick-slide .item-info{
+background-color: #000;
+height: 100%;
+padding:1rem;
+-webkit-transition: all 0.2s ease;
+transition: all 0.2s ease;
+}
+.hp-carousel-container .slider-nav .slick-track .slick-slide .item-info h4{
+color:#303030;
+padding:1rem 0 0.5rem;
+margin:0;
+color:#c5b9ac;
+text-transform: uppercase;
+-webkit-transition: all 0.2s ease;
+transition: all 0.2s ease;
+
+}
+.hp-carousel-container .slider-nav .slick-track .slick-slide .item-info p{
+padding:0;
+margin:0;
+color:#955c35;
+-webkit-transition: all 0.2s ease;
+transition: all 0.2s ease;
+}
+
+.hp-carousel-container .slider-nav .slick-track .slick-slide.slick-current.slick-active.slick-center.is-active >div{
+
+height: 100%;
+}
+.hp-carousel-container .slider-nav .slick-track .slick-slide.slick-current.slick-active.slick-center.is-active .item-info{
+border-top:1px solid #955c35;
+border-bottom: 1px solid #955c35;
+background-color: #955c35;
+height: 100%;
+-webkit-transition: all 0.2s ease;
+transition: all 0.2s ease;
+}
+.hp-carousel-container .slider-nav .slick-track .slick-slide.slick-current.slick-active.slick-center.is-active .item-info h4{
+  color:#fff;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.hp-carousel-container .slider-nav .slick-track .slick-slide.slick-current.slick-active.slick-center.is-active .item-info p{
+  color:#fff;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
